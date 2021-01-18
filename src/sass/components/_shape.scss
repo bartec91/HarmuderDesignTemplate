@@ -1,0 +1,41 @@
+// -------------------------------
+//     SHAPE VARIABLES
+// -------------------------------
+
+    // *--------- TYPOGRAPHY ---------*
+    $shape-icon__font-size: 0.75em;
+
+    // *--------- COLORS ---------*
+    $shape-icon__text-color: #fff;
+    $shape-icon__border-color: #ECEEF6;
+
+// -------------------------------
+//     SHAPE STYLES
+// -------------------------------
+
+
+
+.shape {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid $shape-icon__border-color;
+    background-color: #fff;
+    font-size: $shape-icon__font-size;
+
+    &--circle {
+        border-radius: 50%;
+    }
+
+    &--bg-orange {
+        @include gradient__color--bg-orange;
+    }
+
+    &__icon--orange {
+        @include gradient__color--text-orange;
+    }
+
+    &__icon--white {
+        color: $shape-icon__text-color;
+    }
+}

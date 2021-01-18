@@ -1,0 +1,49 @@
+// -------------------------------
+//     NAV VARIABLES
+// -------------------------------
+
+    // *--------- TYPOGRAPHY ---------*
+
+    // *--------- COLORS ---------*
+    $nav-link__text-color: #000000;
+    $nav-link__text-color--active: lighten($nav-link__text-color, 40);
+
+// ----------------------------
+//     NAV STYLES
+// ----------------------------
+
+.nav {
+    display: flex;
+    align-content: center;
+
+    &__list {
+        display: flex;
+        justify-content: space-between;
+        padding-left: 0;
+
+        text-align: center;
+    }
+
+        &__item {
+            margin: 0 20px;
+
+            list-style: none;
+
+            &--first {
+                margin-left: 0;
+            }
+
+            &--last {
+                margin-right: 0;
+            }
+        }
+
+            &__link {
+                font-size: $base__font-size;
+
+                &--active,
+                &:hover {
+                    color: $nav-link__text-color--active;
+                }
+            }
+}

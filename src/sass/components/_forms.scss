@@ -1,0 +1,43 @@
+// -------------------------------
+//     FORMS VARIABLES
+// -------------------------------
+
+    // *--------- TYPOGRAPHY ---------*
+    $form-field__font-size: 0.875em;
+
+    // *--------- COLORS ---------*
+    $form-field__text-color: #222;
+    $form-field__background-color: #fff;
+
+// -------------------------------
+//     FORMS STYLES
+// -------------------------------
+
+.form {
+    display: flex;
+    justify-content: center;
+    width: 960px;
+    max-width: 100%;
+
+    color: $form-field__text-color;
+
+    &__field {
+        width: 30%;
+        height: 60px;
+        margin-right: 3%;
+        padding: 20px 30px;
+        border: 2px $base__border-color solid;
+        background-color: #fff;
+
+        font-size: $form-field__font-size;
+
+        &--rounded {
+            border-radius: 30px;
+        }
+    }
+
+    &__button {
+        @include gradient__color--bg-orange;
+        font-size: $base__font-size--large;
+    }
+}

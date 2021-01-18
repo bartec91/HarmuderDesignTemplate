@@ -1,0 +1,79 @@
+// -------------------------------
+//     HEADER VARIABLES
+// -------------------------------
+
+    // *--------- TYPOGRAPHY ---------*
+
+    // *--------- COLORS ---------*
+    $header__background-color: #F0F5FB;
+
+// ----------------------------
+//     HEADER STYLES
+// ----------------------------
+
+.header {
+    position: relative;
+    height: 110vh;
+    margin-bottom: 20vh;
+    padding-top: 25px;
+
+    background: $header__background-color url(../img/header_vegetable.png) 0 40% no-repeat;
+    font-size: $base__font-size;
+
+    &::after {
+        content: "";
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 20vh;
+
+        background: url(../img/header_pizza.png) center bottom no-repeat;
+    }
+
+    &__top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        margin-bottom: 105px;
+    }
+
+    &__logo {
+        width: 112px;
+        height: 67px;
+        margin: 0 150px;
+    }
+
+    &__open-hours {
+        font-size: $base__font-size;
+        margin-right: 40px;
+    }
+
+    &__phone {
+        font-size: $base__font-size--large;
+        font-weight: $base__font-weight--bold;
+
+        i {
+            margin-right: 16px;
+            padding: 8px;
+
+            color: #fff;
+            @include gradient__color--bg-orange;
+            border-radius: 59px
+        }
+    }
+
+    &__main {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+
+        font-size: $base__font-size--large;
+        text-align: center;
+    }
+
+    &__heading {
+        flex-basis: 100%;
+        margin-bottom: 18px;
+    }
+}

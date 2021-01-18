@@ -1,0 +1,32 @@
+// -------------------------------
+//     BUTTONS VARIABLES
+// -------------------------------
+
+    // *--------- TYPOGRAPHY ---------*
+
+    // *--------- COLORS ---------*
+    $button__text-color: #fff;
+
+// -------------------------------
+//     BUTTONS STYLES
+// -------------------------------
+
+.button {
+    // display: inline-block;
+    height: 50px;
+    padding: 0 20px;
+    border: none;
+    background: #59AAF1;
+
+    cursor: pointer;
+
+    font-weight: $base__font-weight--bold;
+    color: $button__text-color;
+
+    @extend %transitionAll;
+
+    &--full {
+        display: block;
+        width: 100%;
+    }
+}

@@ -1,0 +1,1 @@
+console.log("Testy Grunt BB Subfolder APP JS");

@@ -1,0 +1,62 @@
+// -------------------------------
+//     FOOTER VARIABLES
+// -------------------------------
+
+    // *--------- TYPOGRAPHY ---------*
+    $footer-text__font-size: 16px;
+
+    // *--------- COLORS ---------*
+    $footer__background-color: #F0F5FB;
+
+// ----------------------------
+//     FOOTER STYLES
+// ----------------------------
+
+.footer {
+    position: relative;
+
+    &__top {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 82px;
+        margin-bottom: 80px;
+
+        background: $footer__background-color url(../img/footer_vegetable.png) 0 70%/100% no-repeat;
+    }
+
+    &__title {
+        margin-bottom: 42px;
+        text-align: center;
+    }
+
+    &__form {
+        display: flex;
+        justify-content: center;
+    }
+
+    &__car {
+        width: 684px;
+        max-width: 100%;
+        margin-bottom: -80px;
+    }
+
+    &__copyright {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        padding-bottom: 50px;
+
+        background-color: #fff;
+    }
+
+    &__logo {
+        width: 95px;
+    }
+
+    &__text {
+        font-size: $footer-text__font-size;
+    }
+}

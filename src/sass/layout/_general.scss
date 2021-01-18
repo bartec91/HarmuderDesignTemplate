@@ -1,0 +1,38 @@
+// -------------------------------
+//     GENERAL VARIABLES
+// -------------------------------
+
+    // *--------- METRICS ---------*
+    $container__width: 1160px;
+
+    // *--------- TYPOGRAPHY ---------*
+
+// ----------------------------
+//     GENERAL STYLES
+// ----------------------------
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    background-color: #fff;
+}
+
+.container {
+    width: $container__width;
+    margin: 0 auto;
+
+}
+
+.img {
+    width: 100%;
+}
+
+.bold {
+    font-weight: $base__font-weight--bold;;
+}
+
+.logo {
+    max-width: 100%;
+}
